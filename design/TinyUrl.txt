@@ -1,0 +1,7 @@
+Designing a URL Shortening service like TinyURL
+
+Let's design a URL shortening service like TinyURL.
+This service will provide short aliases redirecting to long URLs
+
+Similar services :- bit.ly, goo.gl, qlink.me, etc.
+Difficulty Level = Easy

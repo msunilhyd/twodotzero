@@ -1,0 +1,5 @@
+Node version manager installation
+  nvm install 10
+
+Make this version default
+  nvm alias default 10
