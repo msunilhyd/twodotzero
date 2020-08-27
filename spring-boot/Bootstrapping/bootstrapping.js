@@ -228,22 +228,22 @@ and you can see the output as shown below -
 
 Hello World
 
-
-
 101. Ladies and Gentlemen, I'm the tortoise.
-      I can beat anybody, anytime in any competition.
-      Not because I'm the best, or the smartest or the fastest
-      I will win because of the habit I have developed and the
-      consistency I use in applying it. I'm the world's biggest
-      believer in consistency. I'm living proof that it is the
-      ultimate key to success.
+      I can beat anybody, anytime, in any competition.
+      Not because I'm the best or the smartest or the
+      fastest. I will win because of the habit that
+      I have developed and the consistency I use in
+      applying it. I'm the world's biggest believer
+      in consistencey. I'm living proof that it is the
+      ultimate key to success
 102. You can become the person you want to be
 103. No one has ever failed as many times as I have
-104. If History has proven anything, it is that Evolution always wins
+104. If History has proven anything, it is the Evolution
+        always wins
 105. The more music you make, the better listener you become
 
-106. The first week's step should be so small that it becomes mundane
-      and the brain should ask for more in the second week
+106. The first week's step should be so small that it will
+      become mundane in the second week
 107. Knowledge is the new currency
 108. Show me your friends and I will show you your future
 109. Get comfortable making mistakes
@@ -254,22 +254,22 @@ Hello World
 113. Shut-eye is the secret of my superpowers
 114. Familiarity is the crux of productivity
 115. You shall not eat or drink anything that may intoxicate
-        -Buddha
+          - Buddha
 
-116. Decision-Making is easy if there are no contradictions in your value system
+116. Decision-making is easy if there are no contradictions
+      in your value system
 117. The me I see, is the me I'll be
-118. Brilliance and the Capacity for Wisdom have been with him all the time
-119. There are two gifts which God has bestowed on man alone. These two are
-      mind and speech, and the gift of Mind and Speech is equivalent to that
-      of immortality. If a man uses these two gifts rightly, he will differ
-      in nothing from the immortals
+118. Brilliance and the Capacity for wisdom have been with
+      him all the time
+119. If a man uses gifts of mind and speech rightly, he will differ in
+      nothing from the immortals
 120. An eagle never observes others and never lives in the past
 
-121. A man's highest happiness is found in the bestowel of benefits on those
-      he loves
-122. It is not possible to live a really complete or successful life unless
-        one is Rich
-123. We always have been the exception. And forever we will be one
+121. A man's highest happiness is found in the bestowel of benefits
+        on those he loves
+122. It is not possible to live a really complete or successful life
+      unless one is rich
+123. We always have been the exception.
 124. Everything is up for grabs
 125. You shall not swear or indulge in idle and vain talk but speak decently
       and with dignity to the purpose, or keep silence
@@ -277,19 +277,19 @@ Hello World
 126. Great Scientists have reported that their creative breakthroughs came
       at a time of mental quietitude
 127. No idea is perfect. You have to make it one
-128. Prodigies are not born. They are developed
+128. Prodigies are born. They are not developed
 129. I thought about that once. Why didn't I do something about it
 130. Don't kill the dream. Execute it
 
 131. You won't start winning without a beginning
 132. There is only stuff worth stealing and there is stuff worth not stealing
-133. The Lion's limitless endurance, aggressiveness and heart
-        power it on and on
+133. The Lion's limitless endurance, aggressiveness and heart power it
+        on and on
 134. There is no failure until you quit
 135. I may not win immediately, but definitely
 
-136. Even the most amazing product on Earth might require hundred calls just
-      to get the 10 meetings
+136. Even the most amazing product on Earth might require 100 calls just to
+      get the 10 meetings
 137. Top CEOs read 60 books a year
 138. You never quit. Do you ?
 139. Nothing happens to me. It happens because of me
@@ -299,16 +299,5 @@ Hello World
 142. Any target attacked with the right actions in the right amounts with
       persistence is attainable
 143. Never reduce a target, instead increase action
-144. I listen and visualize what goes on in my imagination
+144. I listen and visulaize what goes on in my imagination
 145. No one can create something out of nothing
-
-146. Everything is hard. Everything is easy
-147. Start small. Aim big
-148. When people call something original, they don't know the original source
-      involved
-149. Bismark always has a plan
-150. My manifesto:
-      Make the music you want to hear
-      Write the book you want to read
-      Build the product you want to use
-      Do the work you want to see done
