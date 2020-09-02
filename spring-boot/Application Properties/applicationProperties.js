@@ -120,3 +120,96 @@ spring.application.name = demoservice
 application-dev.properties
 server.port = 9090
 spring.application.name = demoservice
+
+application-prod.properties
+server.port = 4431
+spring.application.name = demoservice
+
+While running the JAR file, we need to specify the spring active profile based on
+each properties file. By default, Spring Boot Application uses the
+application.properties file. The command to set the spring active profile is
+shown below -
+
+java -jar demo-0.0.1-SNAPSHOT.jar --spring.profiles.active=dev
+
+You can see active profile name on the console log as shown below -
+
+com.tutorialspoint.demo.DemoApplication :
+The following profiles are active: dev
+
+Now, Tomcat has started on the port 9090(http) as shown below -
+s.b.c.e.t.TomcatEmbeddedServletContainer :
+Tomcat started on port(s): 9090 (http)
+
+You can set the Production active profile as shown below -
+
+java -jar demo-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod
+
+You can see active profile name on the console log as shown below -
+
+main] com.tutorialspoint.demo.DemoApplication :
+  The following profiles are active : prod
+
+Now, Tomcat started on the port 4431 (http) as shown below -
+s.b.c.e.t.TomcatEmbeddedServletContainer :
+Tomcat started on port(s): 4431 (https)
+
+Spring active profile for application.yml
+
+Let us understand how to keep Spring active profile for application.yml. We can
+keep the Spring active profile properties in the single application.yml file.
+No need to use the separate file like application.properties.
+
+The following is an example code to keep the Spring active profiles in application.yml
+file. Note that the delimiter(---) is used to separate each profile in application.yml
+file.
+
+spring:
+  application:
+    name: demoservice
+server:
+  port: 8080
+
+---
+spring:
+  profiles: dev
+  application:
+    name: demoservices
+server:
+  port: 9090
+
+---
+spring:
+  profiles: prod
+  application:
+    name: demoservice
+server:
+  port: 4431
+
+
+The command to set development active profile is given below -
+
+  java -jar demo-0.0.1-SNAPSHOT.jar --spring.profiles.active=dev
+
+You can see active profile name on the console log as shown below -
+
+com.tutorialspoint.demo.DemoApplication :
+The following profiles are active: dev
+
+Now, Tomcat started on the port 9090 (http) as shown below -
+
+main] s.b.c.e.t.TomcatEmbeddedServletContainer :
+Tomcat started on port(s): 9090 (http)
+
+The command to set Production active profile is given below -
+
+java -jar demo-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod
+
+You can see active profile name on the console log as shown below -
+
+main] com.tutorialspoint.demo.DemoApplication :
+The following profiles are active: prod
+
+This will start Tomcat on the port 4431 (http) as shown below:
+main] s.b.c.e.t.TomcatEmbeddedServletContainer:
+Tomcat started on port(s): 4431 (http)
