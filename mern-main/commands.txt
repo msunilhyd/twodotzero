@@ -3,3 +3,8 @@ Node version manager installation
 
 Make this version default
   nvm alias default 10
+
+node --version
+npm --version
+
+npm install -g npm@6
