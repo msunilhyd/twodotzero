@@ -59,3 +59,80 @@ sudo chown sue myfile.txt
 sudo chown -R sue mydir
 sudo chown sue:sales myfile.txt
 sudo chown sales myfile.txt
+
+ssh-keygen
+ls -l /home/<user>/.ssh
+ls -l /home/jay/.ssh
+ssh-copy-id -i ~/.ssh/id_rsa.pub unicorn
+eval $(ssh-agent)
+ssh-add ~/.ssh/id_rsa
+ssh-keygen -p
+/home/jay/.ssh/config
+nano /home/your_username/.ssh/config
+ssh nagios
+ssh -p 2222 nagiouser@nagios.local.lan
+
+sudp apt install openssh-server
+sudo apt install package1 package2 package3
+sudo apt-get install apache2
+sudo apt update
+sudo apt remove package
+sudo apt remove package1 package2 package3
+sudo apt remove --purge package
+snap find package
+snap find nmap
+sudo snap install nmap
+which nmap
+sudo snap remove nmap
+sudo snap refresh nmap
+sudo snap refresh
+apt search apache php
+apt-cache show libapache2-mod-php
+sudo apt update
+sudo apt-add-repository ppa:username/myawsomesoftware-1.0
+dpkg --get-selections > packages.list
+tmux install
+sudo apt update
+/usr/bin/dselect
+sudo apt install dselect
+sudo dselect update
+sudo dpkg --set-selections < packages.list
+sudo apt-get dselect-upgrade
+sudo apt-get install mariadb-server
+sudo apt install aptitude
+sudo aptitude
+ps
+pidof vim
+ps a
+ps au
+ps aux
+ps aux | grep nginx
+ps u -C nginx
+ps aux --sort=-pcpu
+ps aux --sort=-pcpu | head -n 5
+ps aux --sort=-pmem | head -n 5
+sudo apt install vim-nox
+ps au | grep nano
+fg 1
+sudo apt install htop
+htop &
+sudo kill 31258
+man 7 signal
+sudo kill -9 31258
+sudo killall myprocess
+sudo killall -9 myprocess
+sudo apt install htop
+htop -d 70
+systemctl | grep ssh
+systemctl status ssh
+systemctl status -l ssh
+sudo systemctl stop ssh
+sudo systemctl start ssh
+sudo systemctl enable ssh
+sudo systemctl disable ssh
+service ssh status
+ssh start/running, process 907
+sudo service ssh stop
+ssh stop/waiting
+sudo service ssh start
+ssh start/running, process 1304
