@@ -136,3 +136,43 @@ sudo service ssh stop
 ssh stop/waiting
 sudo service ssh start
 ssh start/running, process 1304
+
+
+/etc/init.d/ssh start
+/etc/init.d/ssh stop
+/etc/init.d/ssh restart
+/etc/init.d/ssh reload
+/etc/init.d/ssh status
+
+sudo systemctl enable myservice@myuser
+free -m
+cat /proc/sys/vm/swappiness
+
+sudo sysctl vm.swappiness=30
+/etc/systcl.conf
+vm.swappiness = 30
+crontab -l
+sudo crontab -u jdoe -l
+no crontab for jdoe
+crontab -e
+EDITOR=vim crontab -e
+m h dom mon dow command
+cat /proc/loadavg
+sudo apt install isc-dhcp-server
+systemctl status isc-dhcp-server
+sudo systemctl stop isc-dhcp-server
+sudo mv /etc/dhcp/dhcpd.conf /etc/dhcp/dhcpd.conf.orig
+sudo systemctl start isc-dhcp-server
+sudo systemctl status isc-dhcp-server
+sudo tail -f /var/log/syslog
+sudo apt install bind9
+sudo systemctl restart bind9
+systemctl status bind9
+sudo systemctl restart bind9
+systemctl status bind9
+cat /var/log/syslog | grep bind9
+systemd-resolve --status | grep DNS Servers
+echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward
+sudo nano /etc/sysctl.conf
+sudo apt install ntp
+systemctl status ntp
