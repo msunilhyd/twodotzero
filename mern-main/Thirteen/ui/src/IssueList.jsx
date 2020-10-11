@@ -99,6 +99,72 @@ class IssueList extends React.Component {
       }
     }`;
 
-    const 
+    const { issues } = this.state;
+    const { showError } = this.props;
+    const data = await graphQLFetch(query, { id: issues[index].id },
+      showError);
+    if (data) {
+      this.setState((prevState) => {
+        const newList = [...prevState.issues];
+        newList[index] = data.issueUpdate;
+        return { issues: newList };
+      });
+    } else {
+      this.loadData();
+    }
+  }
+
+  async deleteIssue(index) {
+    const query = `mutation issueDelete($id: Int!) {
+      issueDelete(id: $id)
+    }`;
+    const { issues } = this.state;
+    const { location: { pathname, search }, history } = this.props;
+    const { showSuccess, showError } = this.props;
+    const { id } = issues[index];
+    const data = await graphQLFetch(query, { id }, showError);
+    if (data && data.issueDelete) {
+      this.setState((prevState) => {
+        const newList = [...prevState.issues];
+        if (pathname === `/issues/${id}`) {
+          history.push({ pathname: '/issues', search });
+        }
+        newList.splice(index, 1);
+        return { issues: newList };
+      });
+      showSuccess(`Deleted issue ${id} successfully.`);
+    } else {
+      this.loadData();
+    }
+  }
+
+  render() {
+    const { issues } = this.state;
+    if (issues == null) return null;
+
+    const { selectedIssue } = this.state;
+    return (
+      <React.Fragment>
+        <Panel>
+          <Panel.Heading>
+            <Panel.Title toggle>Filter</Panel.Title>
+          <Panel.Heading>
+          <Panel.Body collapsible>
+            <IssueFilter />
+          <Panel.Body>
+        </Panel>
+        <IssueTable
+          issues={issues}
+          closeIssue={this.closeIssue}
+          deleteIssue={this.deleteIssue}
+        />
+        <IssueDetail issue={selectedIssue} />
+      </React.Fragment>
+    );
   }
 }
+
+const IssueListWithToast = withToast(IssueList);
+IssueListWithToast.fetchData = IssueList.fetchData;
+
+export default IssueListWithToast;
