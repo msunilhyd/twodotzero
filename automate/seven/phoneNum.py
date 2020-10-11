@@ -60,7 +60,24 @@
 # print(mo.group(1))
 # print(mo.group(2))
 
+#
+# import re
+# #
+# # re.compile(r'(\(Parenthesis\)')
+#
+#
+# heroRegex = re.compile(r'Batman|Tina Fey')
+# mo1 = heroRegex.search('Batman and Tina Fey')
+# # print(mo1.group())
+#
+# mo2 = heroRegex.search('Tina Fey and Batman')
+# print(mo2.group())
 
-import re
+>>>phoneRegex = re.compile(r'(\d\d\d-)?\d\d\d-\d\d\d\d')
+>>>mo1 = phoneRegex.search('My number is 415-555-4242')
+mo1.group()
+'415-555-4242'
 
-re.compile(r'(\(Parenthesis\)')
+>>> mo2 = phoneRegex.search('My number is 555-4242')
+>>> mo2.group()
+'555-4242'
